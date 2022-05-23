@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Game';
+    src: url(fonte/game.ttf);
+}
+
+:root{
+    --cor0: #A81400;
+    --cor1: #b8afae;
+    --cor2: #F5371C;
+    --cor3: #DBA800;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor1);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
+    min-height: 200px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    font-family: 'Game',Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+header > p {
+    font-family: 'Game', Arial, Helvetica, sans-serif;
+    text-align: center;
+ text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.26);
+}
+
+nav {
+    background-color: var(--cor2);
+    padding: 7px;
+    box-shadow: 0px 5px 5px var(--cor3);
+    text-align: center;
+}
+
+nav > a {
+    background-color: #DBA800;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;  
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    background-color: #ffc400;
+}
+
+nav > a:visited {
+    color: rgb(20, 2, 119);
+}
+
+main { 
+    background-color: white;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+
+main h1 {
+    font-family: 'Game', Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+main h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+}
+
+main p {
+    margin: 15px 10px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+
+main a { 
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+
+div.video {
+    background-color: white;
+    margin: 0px -10px 10px -9px;
+    padding: 20px;
+    padding-bottom: 55%;
+    position: relative;
+}
+
+div.video > iframe { 
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+div.imagem { 
+    text-align: center;
+}
+
+
+aside { 
+    background-color: #F5371C;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.404);
+}
+
+aside > h3 { 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    padding: 7px;
+    text-indent: 1px;
+}
+
+aside > p {
+    text-indent: 0px;
+    font-size: 1.1em;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    line-height: 2em;
+}
+
+footer { 
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
